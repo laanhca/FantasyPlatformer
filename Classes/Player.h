@@ -2,11 +2,14 @@
 
 #ifndef PROJ_ANDROID_PLAYER_H
 #define PROJ_ANDROID_PLAYER_H
+
+#include <cocos/editor-support/cocostudio/SimpleAudioEngine.h>
 #include "cocos2d.h"
 #include "GameObj.h"
 class Player : public GameObj{
 public:
     int mScore;
+    CocosDenshion::SimpleAudioEngine *mAudio;
     int getScrore(){
         return mScore;
     }

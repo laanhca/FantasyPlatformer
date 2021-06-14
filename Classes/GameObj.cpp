@@ -62,14 +62,14 @@ float GameObj::getDurations(int id) {
             return mAnimator->getDuration(aniNames[EID::JUMP]);
     }
 }
-void GameObj::textHurt(std::string hp) {
+void GameObj::textHurt(std::string hp,const Color3B& color, float size) {
 //    if(mText!= NULL){
 //        mText->removeAllChildrenWithCleanup(true);
 //    }
-    mText = Label::createWithTTF(hp, "fonts/Regular.ttf", 20);
+    mText = Label::createWithTTF(hp, "fonts/Regular.ttf", size);
     mText->enableBold();
     mText->setPosition(mSprite->getPosition());
-    mText->setColor(Color3B::RED);
+    mText->setColor(color);
     auto action1 = MoveBy::create(2, Vec2(0, 100));
     auto action2= FadeOut::create(2);
     auto spawn = Spawn::create(action1,action2,NULL);

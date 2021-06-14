@@ -27,7 +27,7 @@ public:
     float getCurrentHP(){
         return mCurrentHealth;
     }
-    void textHurt(std::string hp);
+    void textHurt(std::string hp, const Color3B& color, float size=20);
 //    std::vector<Label*> mTexts;
     Label * mText;
     float velocity_x;

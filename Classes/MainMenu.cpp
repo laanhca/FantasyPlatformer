@@ -19,7 +19,7 @@ bool MainMenu::init(){
         log("fail: main menu scene");
         return false;
     }
-
+    mAudio = CocosDenshion::SimpleAudioEngine::getInstance();
     auto visiableSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
     //add background
@@ -79,6 +79,7 @@ bool MainMenu::init(){
 
 
     setBtnCallBack();
+    loadAudio();
     scheduleUpdate();
 
     return true;
@@ -91,17 +92,36 @@ void MainMenu::setBtnCallBack() {
 
 }
 void MainMenu::playBtnPress(cocos2d::Ref *ref) {
+    mAudio->playEffect("music/direct.wav");
     auto LevelSelectScene = TransitionCrossFade::create(0.2f, LevelSelect::createScene());
     Director::getInstance()->pushScene(LevelSelectScene);
 }
 void MainMenu::settingBtnPress(cocos2d::Ref *ref) {
+    mAudio->playEffect("music/direct.wav");
     Director::getInstance()->pushScene(SettingScene::createScene());
 }
 void MainMenu::exitBtnPress(cocos2d::Ref *ref) {
+    mAudio->playEffect("music/direct.wav");
     Director::getInstance()->end();
 }
 void MainMenu::update(float dt) {
     if(Director::getInstance()->isPaused()){
         Director::getInstance()->resume();
     }
+}
+void MainMenu::loadAudio(){
+
+    mAudio->preloadBackgroundMusic("music/amadeuslegendary.ogg");
+    mAudio->preloadEffect("music/att.wav");
+    mAudio->preloadEffect("music/direct.wav");
+    mAudio->preloadEffect("music/gameover.wav");
+    mAudio->preloadEffect("music/levelselect.wav");
+
+    mAudio->preloadEffect("music/collect.wav");
+    mAudio->preloadEffect("music/collect2.mp3");
+    mAudio->preloadEffect("music/explode.ogg");
+    mAudio->preloadEffect("music/shoot.ogg");
+    mAudio->playBackgroundMusic("music/amadeuslegendary.ogg");
+    mAudio->setBackgroundMusicVolume(0.4f);
+    mAudio->setEffectsVolume(0.5f);
 }

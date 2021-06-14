@@ -10,6 +10,7 @@ bool SettingScene::init() {
     if(!Scene::init()){
         return false;
     }
+    mAudio =CocosDenshion::SimpleAudioEngine::getInstance();
     isMusic=true;
     isSound=true;
     auto visiableSize = Director::getInstance()->getVisibleSize();
@@ -60,17 +61,25 @@ void SettingScene::setBtnCallBack() {
     mSoundBtn->addClickEventListener(CC_CALLBACK_1(SettingScene::soundBtnPress, this));
 }
 void SettingScene::homeBtnPress(Ref *ref) {
+    mAudio->playEffect("music/direct.wav");
     Director::getInstance()->popScene();
 }
 void SettingScene::musicBtnPress(Ref *ref) {
+    mAudio->playEffect("music/direct.wav");
     if(isMusic){
+        mAudio->pauseBackgroundMusic();
         isMusic= false;
-    } else {isMusic= true;}
+    } else {
+        mAudio->resumeBackgroundMusic();
+        isMusic= true;}
 }
 void SettingScene::soundBtnPress(Ref *ref) {
+    mAudio->playEffect("music/direct.wav");
     if(isSound){
+        mAudio->pauseAllEffects();
         isSound= false;
-    } else {isSound= true;}
+    } else {mAudio->resumeAllEffects();
+        isSound= true;}
 
 }
 void SettingScene::update(float dt) {

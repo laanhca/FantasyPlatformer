@@ -5,6 +5,7 @@
 #include "IdleState.h"
 #include "DefeatLayer.h"
 bool Player::init() {
+    mAudio= CocosDenshion::SimpleAudioEngine::getInstance();
     GameObj::init();
     mJumpForce= 80000;
     mScore= 0;
@@ -85,22 +86,32 @@ bool Player::onContactPhysicBegin(PhysicsContact& contact) {
 
         return true;}
     if((tagA==GameConst::TAG_PLAYER && tagB==GameConst::TAG_TRAP)||(tagA==GameConst::TAG_TRAP && tagB==GameConst::TAG_PLAYER)){
+        GameConst::GameData::isOver=true;
         isDead=true;
 
         return true;}
     if((tagA==GameConst::TAG_PLAYER && tagB==GameConst::TAG_ITEM)||(tagA==GameConst::TAG_ITEM && tagB==GameConst::TAG_PLAYER)){
         if(tagB==GameConst::TAG_ITEM){
-            if(shapeB->getNode()->getTag()==0){mScore+=5;}
+            if(shapeB->getNode()->getTag()==0){
+                mAudio->playEffect("music/collect2.mp3");
+                this->textHurt("+5 Score ", Color3B::YELLOW);
+                mScore+=5;}
 
-            else{mCurrentHealth+=5;}
+            else{
+                mAudio->playEffect("music/collect2.mp3");
+                this->textHurt("+5 Score ", Color3B::RED);
+                mCurrentHealth+=5;}
             shapeB->getNode()->removeFromParentAndCleanup(true);}
         if(tagA==GameConst::TAG_ITEM){
             if(shapeA->getNode()->getTag()==0){
+                mAudio->playEffect("music/collect2.mp3");
 
                 mScore+=5;
-                this->textHurt("+5 Score ");}
-            else{mCurrentHealth+=5;
-                this->textHurt("+5 HP ");}
+                this->textHurt("+5 Score ", Color3B::YELLOW);}
+            else{
+                mAudio->playEffect("music/collect2.mp3");
+                mCurrentHealth+=5;
+                this->textHurt("+5 HP ", Color3B::RED);}
             shapeA->getNode()->removeFromParentAndCleanup(true);}
 
 

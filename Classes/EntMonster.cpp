@@ -5,8 +5,8 @@
 #include "RunState.h"
 bool EntMonster::init() {
     mScaleFactor=2.0f;
-    mHealthPoint=15;
-    mCurrentHealth=15;
+    mHealthPoint=10;
+    mCurrentHealth=10;
     Monster::init();
 
     createBody("monster/ent.png");

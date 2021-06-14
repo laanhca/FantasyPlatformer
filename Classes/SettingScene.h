@@ -4,6 +4,8 @@
 
 #ifndef PROJ_ANDROID_SETTINGSCENE_H
 #define PROJ_ANDROID_SETTINGSCENE_H
+
+#include <cocos/editor-support/cocostudio/SimpleAudioEngine.h>
 #include "cocos2d.h"
 #include "ui/UIButton.h"
 USING_NS_CC;
@@ -25,6 +27,7 @@ public:
     Label * soundLabel;
     bool isSound;
     bool isMusic;
+    CocosDenshion::SimpleAudioEngine *mAudio;
 
 
 };

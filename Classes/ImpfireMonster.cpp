@@ -5,8 +5,8 @@
 #include "Animator.h"
 bool ImpfireMonster::init() {
     mScaleFactor=2;
-    mHealthPoint=5;
-    mCurrentHealth=5;
+    mHealthPoint=15;
+    mCurrentHealth=15;
     Monster::init();
     createBody("monster/Imp_fire.png");
     mAnimator= new Animator();

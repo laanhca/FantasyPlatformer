@@ -3,6 +3,7 @@
 #define PROJ_ANDROID_PAUSELAYER_H
 
 #include <cocos/ui/UIButton.h>
+#include <cocos/editor-support/cocostudio/SimpleAudioEngine.h>
 #include "cocos2d.h"
 USING_NS_CC;
 
@@ -14,6 +15,7 @@ public:
     void continueBtnPress(Ref *ref);
     void restartBtnPress(Ref *ref);
     void exitBtnPress(Ref *ref);
+    CocosDenshion::SimpleAudioEngine *mAudio;
     LayerColor * mColor;
     cocos2d::ui::Button * mRestart;
     cocos2d::ui::Button * mContinue;

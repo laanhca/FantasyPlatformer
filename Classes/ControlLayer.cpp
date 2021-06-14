@@ -1,6 +1,6 @@
 
 
-#include <cocos/editor-support/cocostudio/SimpleAudioEngine.h>
+
 #include "ControlLayer.h"
 #include "Player.h"
 #include "PauseLayer.h"
@@ -17,6 +17,7 @@ bool ControlLayer::init(){
         log(" lỗi init control layer");
         return false;
     }
+    mAudio = CocosDenshion::SimpleAudioEngine::getInstance();
     auto listener = EventListenerKeyboard::create();
     listener->onKeyPressed = [=](EventKeyboard::KeyCode keyCode,
                                  Event* event){};
@@ -115,6 +116,7 @@ void ControlLayer::setBtnCallBack() {
 void ControlLayer::leftBtnPress(cocos2d::Ref *ref, cocos2d::ui::Widget::TouchEventType type) {
     switch (type) {
         case ui::Widget::TouchEventType::BEGAN :
+            mAudio->playEffect("music/direct.wav");
             mPlayer->velocity_x=-100;
             mPlayer->facing_right= false;
             mPrevState = GameConst::RUN_STATE;
@@ -131,6 +133,7 @@ void ControlLayer::leftBtnPress(cocos2d::Ref *ref, cocos2d::ui::Widget::TouchEve
 void ControlLayer::rightBtnPress(cocos2d::Ref *ref, cocos2d::ui::Widget::TouchEventType type) {
     switch (type) {
         case ui::Widget::TouchEventType::BEGAN :
+            mAudio->playEffect("music/direct.wav");
             mPlayer->velocity_x=100;
             mPlayer->facing_right=true;
             mPrevState=GameConst::RUN_STATE;
@@ -147,6 +150,7 @@ void ControlLayer::rightBtnPress(cocos2d::Ref *ref, cocos2d::ui::Widget::TouchEv
 void ControlLayer::jumpBtnPress(cocos2d::Ref *ref, cocos2d::ui::Widget::TouchEventType type) {
     switch (type) {
         case ui::Widget::TouchEventType::BEGAN :
+            mAudio->playEffect("music/direct.wav");
 //            mPlayer->getPhysicsBody()->applyImpulse(Vec2(0,100000));
             mPrevState=GameConst::JUMP_STATE;
             if(mPlayer->mTouchFloor){
@@ -166,8 +170,7 @@ void ControlLayer::jumpBtnPress(cocos2d::Ref *ref, cocos2d::ui::Widget::TouchEve
 void ControlLayer::attackBtnPress(cocos2d::Ref *ref, cocos2d::ui::Widget::TouchEventType type)  {
     switch (type) {
         case ui::Widget::TouchEventType::BEGAN :
-//            GameConst::setScore(GameConst::getScore() + 1);
-
+            mAudio->playEffect("music/explode.ogg");
             mPlayer->mAttacking=true;
             mPlayer->setState(GameConst::ATTACK_STATE);
             break;
@@ -179,6 +182,7 @@ void ControlLayer::attackBtnPress(cocos2d::Ref *ref, cocos2d::ui::Widget::TouchE
 void ControlLayer::onKeyPressed(
         EventKeyboard::KeyCode keyCode,Event* event){
     if(keyCode == EventKeyboard::KeyCode::KEY_BACK){
+        mAudio->playEffect("music/direct.wav");
          if(!Director::getInstance()->isPaused()){
              mPause = PauseLayer::createLayer();
              this->addChild(mPause);
@@ -198,20 +202,28 @@ void ControlLayer::update(float dt) {
 //        this->addChild(mDefeat);
 //        Director::getInstance()->pause();
 //    }
-    if(GameConst::GameData::isOver){
+    if(GameConst::GameData::isOver ){
 
              mDefeat = new DefeatLayer(mPlayer->getScrore());
              this->addChild(mDefeat);
-             Director::getInstance()->pause();
-             GameConst::GameData::isOver= false;
+        if(!Director::getInstance()->isPaused()){
+            Director::getInstance()->pause();
+            GameConst::GameData::isOver= false;
+        }
+
+
 
     }
     if(GameConst::GameData::isWin){
 
         mWin = new VictoryLayer(mPlayer->getScrore());
         this->addChild(mWin);
-        Director::getInstance()->pause();
-        GameConst::GameData::isWin= false;
+        if(!Director::getInstance()->isPaused()){
+            Director::getInstance()->pause();
+            GameConst::GameData::isWin= false;
+        }
+
+
 
     }
     updateScore(dt);
@@ -225,7 +237,7 @@ void ControlLayer::setTimer() {
     mTextCountdown->setPosition(timerIcon->getPositionX()+timerIcon->getContentSize().height * 5,
                                 timerIcon->getPositionY() );
     this->addChild(mTextCountdown);
-    mTimerCountdown = 2;
+    mTimerCountdown = 300;
     schedule(CC_SCHEDULE_SELECTOR(ControlLayer::updateTimer));
 
 }

@@ -5,8 +5,8 @@
 #include "Animator.h"
 bool DragonMonster::init() {
     mScaleFactor=3;
-    mHealthPoint=5;
-    mCurrentHealth=5;
+    mHealthPoint=15;
+    mCurrentHealth=15;
     Monster::init();
     createBody("monster/dragon.png");
     mAnimator= new Animator();

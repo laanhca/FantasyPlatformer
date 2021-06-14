@@ -5,8 +5,8 @@
 #include "RunState.h"
 bool DinoMonster::init() {
     mScaleFactor=3.0f;
-    mHealthPoint=15;
-    mCurrentHealth=15;
+    mHealthPoint=10;
+    mCurrentHealth=10;
     Monster::init();
     createBody("monster/dino.png");
     mAnimator= new Animator();

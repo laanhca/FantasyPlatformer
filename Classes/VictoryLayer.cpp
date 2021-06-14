@@ -9,6 +9,8 @@ bool  VictoryLayer::init(){
     if(!Layer::init()){
         return false;
     }
+    mAudio = CocosDenshion::SimpleAudioEngine::getInstance();
+    mAudio->playEffect("music/levelselect.wav");
 
     mColor= LayerColor::create(Color4B(255, 255, 255, 100));
     this->addChild(mColor);
@@ -52,6 +54,8 @@ bool  VictoryLayer::init(){
     return true;
 }
 void VictoryLayer::homeBtnPress(Ref *ref) {
+    GameConst::GameData::isWin= false;
+    mAudio->playEffect("music/direct.wav");
     this->removeFromParentAndCleanup(true);
     Director::getInstance()->popScene();
     Director::getInstance()->resume();

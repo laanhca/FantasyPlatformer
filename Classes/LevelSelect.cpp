@@ -15,7 +15,7 @@ bool  LevelSelect::init() {
     if(!Scene::init()){
         return false;
     }
-
+    mAudio = CocosDenshion::SimpleAudioEngine::getInstance();
     auto visiableSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
     auto bg= Sprite::create("background/Background.png");
@@ -88,9 +88,12 @@ bool  LevelSelect::init() {
     return true;
 }
 void LevelSelect::onClickDoor(Ref *ref) {
+    GameConst::GameData::isOver= false;
+    mAudio->playEffect("music/levelselect.wav");
     if(Director::getInstance()->isPaused()){
         Director::getInstance()->resume();
     }
+
     auto clickItem = (MenuItemImage *) ref;
     log("Click tag = %d", clickItem->getTag());
     if(clickItem->getTag()==1){
@@ -107,5 +110,6 @@ void LevelSelect::onClickDoor(Ref *ref) {
     }
 }
 void LevelSelect::onClickBack(Ref *ref) {
+    mAudio->playEffect("music/direct.wav");
     Director::getInstance()->popScene();
 }

@@ -6,6 +6,7 @@
 #include <cocos/ui/UIButton.h>
 #include "cocos2d.h"
 #include "ui/CocosGUI.h"
+#include <cocos/editor-support/cocostudio/SimpleAudioEngine.h>
 USING_NS_CC;
 class Player;
 class DefeatLayer;
@@ -37,6 +38,7 @@ public:
 
 
 private:
+    CocosDenshion::SimpleAudioEngine *mAudio;
     int mPrevState;
     Player* mPlayer;
     cocos2d::ui::Button* mLeftBtn;
@@ -48,6 +50,7 @@ private:
     DefeatLayer* mDefeat;
     PauseLayer* mPause;
     VictoryLayer* mWin;
+
     float mTimerCountdown;
     Label* mTextCountdown;
     Label* mTextScore;

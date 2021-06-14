@@ -8,6 +8,7 @@ bool PauseLayer::init() {
     if(!Layer::init()){
         return false;
     }
+    mAudio = CocosDenshion::SimpleAudioEngine::getInstance();
 
     mColor= LayerColor::create(Color4B(255, 255, 255, 100));
     this->addChild(mColor);
@@ -58,15 +59,18 @@ void PauseLayer::setBtnCallBack() {
     mExit->addClickEventListener(CC_CALLBACK_1(PauseLayer::exitBtnPress,this));
 }
 void PauseLayer::continueBtnPress(Ref *ref) {
+    mAudio->playEffect("music/direct.wav");
     this->removeFromParentAndCleanup(true);
     Director::getInstance()->resume();
 
 }
 void PauseLayer::exitBtnPress(Ref *ref) {
+    mAudio->playEffect("music/direct.wav");
     Director::getInstance()->end();
 
 }
 void PauseLayer::restartBtnPress(Ref *ref) {
+    mAudio->playEffect("music/direct.wav");
     Director::getInstance()->popScene();
     Director::getInstance()->resume();
 

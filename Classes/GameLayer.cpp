@@ -106,7 +106,7 @@ void GameLayer::update(float dt) {
                         if(mRange<50){//40
 
                             mMonsters.at(i)->setCurrentHP(mMonsters.at(i)->getCurrentHP() -1);
-                            mMonsters.at(i)->textHurt("-1");
+                            mMonsters.at(i)->textHurt("-1", Color3B::RED,15);
                             mPlayer->setScore(mPlayer->getScrore() + 1);
 //                            mPlayer->textHurt("+1 Score");
                             mMonsters.at(i)->setState(GameConst::HURT_STATE);
@@ -147,7 +147,7 @@ void GameLayer::updateMonster(float dt) {
                      mRange= sqrt(pow(mPlayerX-mMonsterX,2) + pow(mPlayerY-mMonsterY,2) );
                     if(mRange<50){//30
                         mPlayer->setCurrentHP(mPlayer->getCurrentHP()-2);
-                        mPlayer->textHurt("-2");
+                        mPlayer->textHurt("-2",Color3B::RED, 25);
                     }
                 }
         }
@@ -165,12 +165,12 @@ void GameLayer::updateItem(float dt) {
                 if(mRange1<10){
                     if (mMapItems.at(j)->getTag() == 0) {
                         mPlayer->setScore(mPlayer->getScrore() + 5);
-                        mPlayer->textHurt("+5 Score ");
+                        mPlayer->textHurt("+5 Score ", Color3B::YELLOW);
                         mMapItems.at(j)->isDead=true;
                     }
                     if(mMapItems.at(j)->getTag()==1){
                         mPlayer->setCurrentHP(mPlayer->getCurrentHP() + 5);
-                        mPlayer->textHurt("+5 HP");
+                        mPlayer->textHurt("+5 HP", Color3B::RED);
                         mMapItems.at(j)->isDead=true;
                     }
 
@@ -180,10 +180,10 @@ void GameLayer::updateItem(float dt) {
     }
 }
 void GameLayer::loadAudio() {
-    mAudio = CocosDenshion::SimpleAudioEngine::getInstance();
-    mAudio->preloadBackgroundMusic("music/Grassland.wav");
-    mAudio->preloadEffect("music/player_attack.wav");
-    mAudio->playBackgroundMusic("music/Grassland.wav");
+//    mAudio = CocosDenshion::SimpleAudioEngine::getInstance();
+//    mAudio->preloadBackgroundMusic("music/Grassland.wav");
+//    mAudio->preloadEffect("music/player_attack.wav");
+//    mAudio->playBackgroundMusic("music/Grassland.wav");
 }
 
 

@@ -5,10 +5,10 @@
 #include "Animator.h"
 bool SalamanderMonster::init() {
     mScaleFactor=2;
-    mHealthPoint=5;
-    mCurrentHealth=5;
+    mHealthPoint=15;
+    mCurrentHealth=15;
     Monster::init();
-    createBody("monster/Imp.png");
+    createBody("monster/salamander.png");
     mAnimator= new Animator();
     aniNames[EID::IDLE]="Salamander_walk";
     aniNames[EID::RUN]="Salamander_walk";

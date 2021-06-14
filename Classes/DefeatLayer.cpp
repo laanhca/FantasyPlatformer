@@ -21,6 +21,9 @@ bool  DefeatLayer::init(){
         return false;
     }
 
+    mAudio = CocosDenshion::SimpleAudioEngine::getInstance();
+    mAudio->playEffect("music/gameover.wav");
+
     mColor= LayerColor::create(Color4B(255, 255, 255, 100));
     this->addChild(mColor);
 
@@ -63,6 +66,8 @@ bool  DefeatLayer::init(){
     return true;
 }
 void DefeatLayer::homeBtnPress(Ref *ref) {
+    mAudio->playEffect("music/direct.wav");
+    GameConst::GameData::isOver= false;
     Director::getInstance()->resume();
     Director::getInstance()->popScene();
     this->removeFromParentAndCleanup(true);

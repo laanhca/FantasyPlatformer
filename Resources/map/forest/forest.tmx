@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="80" height="16" tilewidth="32" tileheight="32" infinite="0" nextobjectid="156">
+<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="80" height="16" tilewidth="32" tileheight="32" infinite="0" nextobjectid="173">
  <tileset firstgid="1" name="tiles" tilewidth="32" tileheight="32" tilecount="192" columns="48">
   <image source="tiles.png" width="1536" height="128"/>
  </tileset>
@@ -105,7 +105,7 @@
     <property name="ID" value="1"/>
    </properties>
   </object>
-  <object id="129" x="1609" y="103">
+  <object id="129" x="1605" y="98">
    <properties>
     <property name="ID" value="1"/>
    </properties>
@@ -198,6 +198,61 @@
   <object id="151" x="1713" y="417">
    <properties>
     <property name="ID" value="1"/>
+   </properties>
+  </object>
+  <object id="158" x="1190" y="317">
+   <properties>
+    <property name="ID" value="1"/>
+   </properties>
+  </object>
+  <object id="159" x="1226" y="316">
+   <properties>
+    <property name="ID" value="1"/>
+   </properties>
+  </object>
+  <object id="160" x="1260" y="315">
+   <properties>
+    <property name="ID" value="1"/>
+   </properties>
+  </object>
+  <object id="161" x="1010" y="222">
+   <properties>
+    <property name="ID" value="1"/>
+   </properties>
+  </object>
+  <object id="164" x="1047" y="222">
+   <properties>
+    <property name="ID" value="1"/>
+   </properties>
+  </object>
+  <object id="165" x="2302" y="175">
+   <properties>
+    <property name="ID" value="1"/>
+   </properties>
+  </object>
+  <object id="166" x="2352" y="390">
+   <properties>
+    <property name="ID" value="1"/>
+   </properties>
+  </object>
+  <object id="167" x="1198" y="133">
+   <properties>
+    <property name="ID" value="1"/>
+   </properties>
+  </object>
+  <object id="168" x="979" y="131">
+   <properties>
+    <property name="ID" value="0"/>
+   </properties>
+  </object>
+  <object id="170" x="824" y="384">
+   <properties>
+    <property name="ID" value="1"/>
+   </properties>
+  </object>
+  <object id="172" x="1060" y="410">
+   <properties>
+    <property name="ID" value="0"/>
    </properties>
   </object>
  </objectgroup>
@@ -320,11 +375,6 @@
     <property name="ID" value="3"/>
    </properties>
   </object>
-  <object id="84" x="1252" y="316">
-   <properties>
-    <property name="ID" value="3"/>
-   </properties>
-  </object>
   <object id="85" x="1113" y="234">
    <properties>
     <property name="ID" value="5"/>
@@ -425,19 +475,14 @@
     <property name="ID" value="5"/>
    </properties>
   </object>
-  <object id="113" x="1888" y="191">
+  <object id="113" x="2159" y="192">
    <properties>
     <property name="ID" value="5"/>
    </properties>
   </object>
-  <object id="114" x="1927" y="194">
+  <object id="114" x="2211" y="192">
    <properties>
     <property name="ID" value="5"/>
-   </properties>
-  </object>
-  <object id="153" x="2157" y="148">
-   <properties>
-    <property name="ID" value="6"/>
    </properties>
   </object>
  </objectgroup>
@@ -619,6 +664,5 @@
     <property name="tag" value="1111"/>
    </properties>
   </object>
-  <object id="155" x="2106" y="184" width="185" height="19"/>
  </objectgroup>
 </map>

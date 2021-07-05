@@ -36,7 +36,9 @@ bool SettingScene::init() {
                                             "gui/PNG/14Pause/button_yellow.png");
     mMusicBtn->setPosition(Vec2(Director::getInstance()->getVisibleSize().width / 2,
                                 Director::getInstance()->getVisibleSize().height / 1.5f));
-    mMusicBtn->setScale(4);
+//    mMusicBtn->setScale(4);
+    mMusicBtn->setScale(visiableSize.width / 4 / mMusicBtn->getContentSize().width,
+                          visiableSize.height / 9 / mMusicBtn->getContentSize().height);
     this->addChild(mMusicBtn);
 
     musicLabel = Label::createWithTTF("MUSIC: ON ", "fonts/Regular.ttf", 20);
@@ -49,7 +51,9 @@ bool SettingScene::init() {
                                             "gui/PNG/14Pause/button_yellow.png");
     mSoundBtn->setPosition(Vec2(Director::getInstance()->getVisibleSize().width / 2,
                                 Director::getInstance()->getVisibleSize().height / 2.0f));
-    mSoundBtn->setScale(4);
+//    mSoundBtn->setScale(4);
+    mSoundBtn->setScale(visiableSize.width / 4 / mSoundBtn->getContentSize().width,
+                        visiableSize.height / 9 / mSoundBtn->getContentSize().height);
     this->addChild(mSoundBtn);
 
     soundLabel = Label::createWithTTF("SOUND: ON ", "fonts/Regular.ttf", 20);

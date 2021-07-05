@@ -49,13 +49,15 @@ bool MainMenu::init() {
     characters->setPosition(visiableSize.width / 2, visiableSize.height / 2 + origin.y +
                                                     (platform->getContentSize().height *
                                                      platform->getScaleY()) / 2);
-    characters->setScale(2);
+//    characters->setScale(2);
+    characters->setScale((visiableSize.width / 2) / characters->getContentSize().width,
+                       (visiableSize.height / 3) / characters->getContentSize().height);
     this->addChild(characters, -1);
 
     auto title = Sprite::create("gui/PNG/01main/title.png");
     title->setPosition(platform->getPosition());
-//    title->setContentSize(platform->getContentSize()*platform->getScale());
-    title->setScale(1.5);
+    title->setContentSize(platform->getContentSize()*platform->getScale());
+//    title->setScale(1.5);
     this->addChild(title);
 
     mPlayBtn = cocos2d::ui::Button::create("gui/PNG/01main/buttons1.png",
@@ -147,6 +149,6 @@ void MainMenu::loadAudio() {
     mAudio->preloadEffect("music/explode.ogg");
     mAudio->preloadEffect("music/shoot.ogg");
     mAudio->playBackgroundMusic("music/amadeuslegendary.ogg");
-    mAudio->setBackgroundMusicVolume(0.4f);
+    mAudio->setBackgroundMusicVolume(0.3f);
     mAudio->setEffectsVolume(0.5f);
 }

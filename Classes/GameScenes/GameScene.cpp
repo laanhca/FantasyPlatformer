@@ -5,17 +5,19 @@
 #include "GameScenes/PlayScene/GameObjects/Player/Player.h"
 #include "GameScenes/PlayScene/Handlers/ControlLayer.h"
 
-GameScene::GameScene(int pLevel) :mLevel(pLevel) {
+GameScene::GameScene(int pLevel) : mLevel(pLevel) {
 }
+
 GameScene::GameScene() {}
-bool GameScene::init(){
-    if(!Scene::init()){
+
+bool GameScene::init() {
+    if (!Scene::init()) {
         CCLOG("failed to initialize layer in main menu scene");
         return false;
     }
     Scene::createWithPhysics();
-    getPhysicsWorld()->setGravity(Vec2(0.0f,-700));
-    mFrameCache= SpriteFrameCache::getInstance();
+    getPhysicsWorld()->setGravity(Vec2(0.0f, -700));
+    mFrameCache = SpriteFrameCache::getInstance();
     loadAssets();
     mPlayer = Player::create();
 //    mPlayer->init();
@@ -23,8 +25,9 @@ bool GameScene::init(){
     log("MainGameScene init");
     return true;
 }
+
 void GameScene::addLayer() {
-    mGameLayer= new GameLayer(mPlayer);
+    mGameLayer = new GameLayer(mPlayer);
     mGameLayer->init();
     this->addChild(mGameLayer, -1);
     mControl = new ControlLayer(mPlayer);
@@ -32,9 +35,10 @@ void GameScene::addLayer() {
     this->addChild(mControl);
     auto bg = cocos2d::Sprite::create("tilemaps/dungeon/Background/Pale/Background.png");
     bg->setScale(5);
-    bg->setPosition(Vec2(0,0));
-    this->addChild(bg,-2);
+    bg->setPosition(Vec2(0, 0));
+    this->addChild(bg, -2);
 }
+
 void GameScene::loadAssets() {
     mFrameCache->addSpriteFramesWithFile("character/Rogue/roguepl.plist");
     mFrameCache->addSpriteFramesWithFile("monster/houndmonster.plist");

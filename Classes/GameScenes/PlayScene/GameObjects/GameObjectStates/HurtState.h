@@ -4,12 +4,17 @@
 #define PROJ_ANDROID_HURTSTATE_H
 
 #include "ObjState.h"
-class HurtState: public ObjState{
-    float mDurationHurt=0;
-    ObjState* setState(int sate) override ;
-    void update(float dt);
-    void enter(GameObj * pGameObj) override ;
 
+class HurtState : public ObjState {
+public:
+    ObjState *setState(int sate) override;
+
+    void update(float dt);
+
+    void enter(GameObj *pGameObj) override;
+
+private:
+    float mDurationHurt = 0;
 };
 
 

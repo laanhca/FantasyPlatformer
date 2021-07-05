@@ -4,7 +4,8 @@
 #include "DeadState.h"
 #include "HurtState.h"
 #include "JumpState.h"
-ObjState * HurtState::setState(int state) {
+
+ObjState *HurtState::setState(int state) {
 //    mGameObj->mPrevState= GameConst::HURT_STATE;
     switch (state) {
         case GameConst::IDLE_STATE:
@@ -17,17 +18,20 @@ ObjState * HurtState::setState(int state) {
             return new RunState();
         case GameConst::JUMP_STATE:
             return new JumpState();
-        default:return NULL;
+        default:
+            return NULL;
     }
 }
+
 void HurtState::enter(GameObj *pGameObj) {
-    mGameObj= pGameObj;
+    mGameObj = pGameObj;
     mGameObj->playAnimation(GameConst::HURT_STATE);
 }
-void HurtState::update(float dt){
+
+void HurtState::update(float dt) {
     log("hurtttttttttttttttttttttt");
-    mDurationHurt+=dt;
-    if(mDurationHurt>=mGameObj->getDurations(GameConst::ATTACK_STATE)){
+    mDurationHurt += dt;
+    if (mDurationHurt >= mGameObj->getDurations(GameConst::ATTACK_STATE)) {
         mGameObj->setState(mGameObj->mPrevState);
     }
 }

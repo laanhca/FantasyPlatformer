@@ -84,6 +84,7 @@ list(APPEND GAME_SOURCE
      Classes/GameScenes/PlayScene/GameObjects/Monsters/DragonMonster.cpp
      Classes/GameScenes/PlayScene/GameObjects/Monsters/ImpfireMonster.cpp
      Classes/GameScenes/PlayScene/GameObjects/Monsters/SalamanderMonster.cpp
+
      )
 list(APPEND GAME_HEADER
      Classes/AppDelegate.h
@@ -122,6 +123,7 @@ list(APPEND GAME_HEADER
      Classes/GameScenes/PlayScene/GameObjects/Monsters/DragonMonster.h
      Classes/GameScenes/PlayScene/GameObjects/Monsters/ImpfireMonster.h
      Classes/GameScenes/PlayScene/GameObjects/Monsters/SalamanderMonster.h
+
      )
 
 if(ANDROID)

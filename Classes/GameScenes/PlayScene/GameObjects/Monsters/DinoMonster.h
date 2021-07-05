@@ -2,11 +2,13 @@
 
 #ifndef PROJ_ANDROID_DINOMONSTER_H
 #define PROJ_ANDROID_DINOMONSTER_H
+
 #include "Monster.h"
 
-class DinoMonster : public Monster{
+class DinoMonster : public Monster {
 public:
-    virtual bool init()override ;
+    virtual bool init() override;
+
     CREATE_FUNC(DinoMonster);
 };
 

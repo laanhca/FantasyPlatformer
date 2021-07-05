@@ -2,7 +2,8 @@
 
 #include "CoinItem.h"
 #include "GameScenes/PlayScene/Handlers/Animator.h"
-bool CoinItem::init(){
+
+bool CoinItem::init() {
 
     this->setTag(0);
     GameObj::init();
@@ -18,13 +19,14 @@ bool CoinItem::init(){
     mAnimator = new Animator();
     aniNames[EID::IDLE] = "coin";
     mAnimator->addAnimation(aniNames[EID::IDLE], 10);
-    mAnimator->playAnimation(mSprite,aniNames[EID::IDLE]);
+    mAnimator->playAnimation(mSprite, aniNames[EID::IDLE]);
     scheduleUpdate();
 
     return true;
 }
+
 void CoinItem::update(float delta) {
-    if(isDead){
+    if (isDead) {
 
         removeFromParentAndCleanup(true);
 

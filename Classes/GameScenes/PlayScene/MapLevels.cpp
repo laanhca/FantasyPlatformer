@@ -15,21 +15,25 @@
 #include "GameScenes/PlayScene/GameObjects/Monsters/DragonMonster.h"
 #include "GameScenes/PlayScene/GameObjects/Monsters/SalamanderMonster.h"
 #include "GameScenes/PlayScene/GameObjects/Monsters/ImpfireMonster.h"
+
 MapLevels::MapLevels() {}
+
 MapLevels::~MapLevels() {}
-MapLevels::MapLevels(GameLayer *pParent, const std::string &path, float pScale) :mScaleFactor(pScale),mParentLayer(pParent){
-    mTileMap= TMXTiledMap::create(path);
-    if(!mTileMap){
+
+MapLevels::MapLevels(GameLayer *pParent, const std::string &path, float pScale) : mScaleFactor(
+        pScale), mParentLayer(pParent) {
+    mTileMap = TMXTiledMap::create(path);
+    if (!mTileMap) {
         log("load map lỗi");
         return;
     }
     mTileMap->setScale(mScaleFactor);
     this->addChild(mTileMap);
-    mTileWidth= mTileMap->getTileSize().width;
-    mTileHeight= mTileMap->getTileSize().height;
-    mWidth= mTileMap->getMapSize().width;
-    mHeight=mTileMap->getMapSize().height;
-    mMapSizeX= mWidth*mTileWidth;
+    mTileWidth = mTileMap->getTileSize().width;
+    mTileHeight = mTileMap->getTileSize().height;
+    mWidth = mTileMap->getMapSize().width;
+    mHeight = mTileMap->getMapSize().height;
+    mMapSizeX = mWidth * mTileWidth;
 
     loadWall();
     loadPosition();
@@ -37,29 +41,31 @@ MapLevels::MapLevels(GameLayer *pParent, const std::string &path, float pScale) 
     loadItems();
     scheduleUpdate();
 }
+
 void MapLevels::loadWall() {
     auto wallObjs = mTileMap->getObjectGroup("Colliders")->getObjects();
-    for(auto wallObj: wallObjs){
-        auto wallMap= wallObj.asValueMap();
+    for (auto wallObj: wallObjs) {
+        auto wallMap = wallObj.asValueMap();
         float x = wallMap["x"].asFloat();
-        float y= wallMap["y"].asFloat();
-        float width= wallMap["width"].asFloat();
-        float height= wallMap["height"].asFloat();
-        int tag= wallMap["tag"].asInt();
+        float y = wallMap["y"].asFloat();
+        float width = wallMap["width"].asFloat();
+        float height = wallMap["height"].asFloat();
+        int tag = wallMap["tag"].asInt();
 
         auto wallNode = Node::create();
-        wallNode->setContentSize(Size(width,height)*mScaleFactor);
-        wallNode->setPosition(Vect(x,y)*mScaleFactor);
-        auto physicBodyWall = PhysicsBody::createBox(wallNode->getContentSize(),PhysicsMaterial(1.0f,0.0f,1.0f));
+        wallNode->setContentSize(Size(width, height) * mScaleFactor);
+        wallNode->setPosition(Vect(x, y) * mScaleFactor);
+        auto physicBodyWall = PhysicsBody::createBox(wallNode->getContentSize(),
+                                                     PhysicsMaterial(1.0f, 0.0f, 1.0f));
         physicBodyWall->setDynamic(false);
 
 
-        if(tag==GameConst::TAG_FLOOR){
+        if (tag == GameConst::TAG_FLOOR) {
             physicBodyWall->setContactTestBitmask(true);
             physicBodyWall->setCollisionBitmask(GameConst::TAG_FLOOR);
             physicBodyWall->setGroup(-2);
         }
-        if(tag==GameConst::TAG_TRAP){
+        if (tag == GameConst::TAG_TRAP) {
             physicBodyWall->setContactTestBitmask(true);
             physicBodyWall->setCollisionBitmask(GameConst::TAG_TRAP);
 //            physicBodyWall->setGroup(-2);
@@ -71,36 +77,38 @@ void MapLevels::loadWall() {
 
     }
 }
+
 void MapLevels::loadPosition() {
     auto playerPosition = mTileMap->getObjectGroup("Positions")->getObjects();
-    auto playerMap= playerPosition.at(0).asValueMap();
+    auto playerMap = playerPosition.at(0).asValueMap();
     float x = playerMap["x"].asFloat();
     float y = playerMap["y"].asFloat();
-    mPlayerPosition=Vec2(x,y)*mScaleFactor;
+    mPlayerPosition = Vec2(x, y) * mScaleFactor;
 }
+
 void MapLevels::loadMonster() {
     auto monsterObjs = mTileMap->getObjectGroup("Monsters")->getObjects();
-    for(auto monsterObj: monsterObjs){
+    for (auto monsterObj: monsterObjs) {
         auto monsterMap = monsterObj.asValueMap();
-        float x= monsterMap["x"].asFloat();
+        float x = monsterMap["x"].asFloat();
         float y = monsterMap["y"].asFloat();
         int ID = monsterMap["ID"].asInt();
-        GameObj * monster= nullptr;
+        GameObj *monster = nullptr;
         switch (ID) {
             case 0:
-                monster= KnightMonster::create();
+                monster = KnightMonster::create();
                 break;
             case 1:
-                monster= ImpMonster::create();
+                monster = ImpMonster::create();
                 break;
             case 3:
-                monster= DinoMonster::create();
+                monster = DinoMonster::create();
                 break;
             case 4:
-                monster= EntMonster::create();
+                monster = EntMonster::create();
                 break;
             case 5:
-                monster= GoblinMonster::create();
+                monster = GoblinMonster::create();
                 break;
             case 2:
                 monster = HoundMonster::create();
@@ -117,24 +125,26 @@ void MapLevels::loadMonster() {
             default:
                 break;
         }
-        monster->setPosition(Vec2(x,y)*mScaleFactor);
-        this->addChild(monster,100);
+        monster->setPosition(Vec2(x, y) * mScaleFactor);
+        this->addChild(monster, 100);
         mMapMonsters.push_back(monster);
     }
 
 }
+
 void MapLevels::monsterScan() {
     Vec2 mPlayerP = mParentLayer->getPlayer()->getPosition();
-    if(mParentLayer->getPlayer()->mAttacking ){
-        for(auto monsterupdate: mMapMonsters){
-            if((monsterupdate->getPositionX()<mPlayerP.x+10 && monsterupdate->getPositionX()> mPlayerP.x -10) ){
+    if (mParentLayer->getPlayer()->mAttacking) {
+        for (auto monsterupdate: mMapMonsters) {
+            if ((monsterupdate->getPositionX() < mPlayerP.x + 10 &&
+                 monsterupdate->getPositionX() > mPlayerP.x - 10)) {
 
                 log("dang tan cong");
                 monsterupdate->setState(GameConst::HURT_STATE);
-                monsterupdate->setCurrentHP(monsterupdate->getCurrentHP()-1);
+                monsterupdate->setCurrentHP(monsterupdate->getCurrentHP() - 1);
 
                 log("mau quai %d", monsterupdate->getCurrentHP());
-                mParentLayer->getPlayer()->mAttacking= false;
+                mParentLayer->getPlayer()->mAttacking = false;
 
 
             }
@@ -145,32 +155,34 @@ void MapLevels::monsterScan() {
 
 
 }
+
 void MapLevels::update(float dt) {
 
 }
+
 void MapLevels::loadItems() {
     auto items = mTileMap->getObjectGroup("goodobj")->getObjects();
-    for(auto itemObj: items){
+    for (auto itemObj: items) {
         auto itemMap = itemObj.asValueMap();
-        float x= itemMap["x"].asFloat();
+        float x = itemMap["x"].asFloat();
         float y = itemMap["y"].asFloat();
         int ID = itemMap["ID"].asInt();
-        GameObj * item= nullptr;
+        GameObj *item = nullptr;
         switch (ID) {
             case 0:
-                item= CoinItem::create();
+                item = CoinItem::create();
 
                 break;
             case 1:
 //                item= HPItem::create();
-                item= HPItem::create();
+                item = HPItem::create();
                 break;
             default:
                 break;
         }
 
-        item->setPosition(Vec2(x,y)*mScaleFactor);
-        this->addChild(item,100);
+        item->setPosition(Vec2(x, y) * mScaleFactor);
+        this->addChild(item, 100);
         mMapItems.push_back(item);
 
     }

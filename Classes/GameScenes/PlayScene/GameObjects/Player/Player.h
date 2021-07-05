@@ -6,22 +6,30 @@
 #include <cocos/editor-support/cocostudio/SimpleAudioEngine.h>
 #include "cocos2d.h"
 #include "../GameObj.h"
-class Player : public GameObj{
+
+class Player : public GameObj {
 public:
-    int mScore;
-    CocosDenshion::SimpleAudioEngine *mAudio;
-    int getScrore(){
+    int getScrore() {
         return mScore;
     }
-    void setScore(float score){
-        mScore= score;
+
+    void setScore(float score) {
+        mScore = score;
     }
-    bool init()override ;
-    void update(float dt)override ;
+
+    bool init() override;
+
+    void update(float dt) override;
+
     void addAnimations();
-    bool onContactPhysicBegin(PhysicsContact& contact);
-//    void textHurt(std::string hp);
+
+    bool onContactPhysicBegin(PhysicsContact &contact);
+
     CREATE_FUNC(Player);
+
+private:
+    int mScore;
+    CocosDenshion::SimpleAudioEngine *mAudio;
 };
 
 

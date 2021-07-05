@@ -7,7 +7,8 @@
 
 class DragonMonster : public Monster {
 public:
-    virtual bool init()override ;
+    virtual bool init() override;
+
     CREATE_FUNC(DragonMonster);
 
 };

@@ -5,10 +5,14 @@
 
 #include "ObjState.h"
 #include "ObjState.h"
-class IdleState : public ObjState{
-    ObjState* setState(int sate) override ;
+
+class IdleState : public ObjState {
+public:
+    ObjState *setState(int sate) override;
+
     void update(float dt);
-    void enter(GameObj * pGameObj) override ;
+
+    void enter(GameObj *pGameObj) override;
 };
 
 

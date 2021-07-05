@@ -7,8 +7,8 @@
 #include "HurtState.h"
 #include "JumpState.h"
 
-ObjState * RunState::setState(int state) {
-    mGameObj->mPrevState= GameConst::RUN_STATE;
+ObjState *RunState::setState(int state) {
+    mGameObj->mPrevState = GameConst::RUN_STATE;
     switch (state) {
         case GameConst::IDLE_STATE:
             return new IdleState();
@@ -20,13 +20,16 @@ ObjState * RunState::setState(int state) {
             return new HurtState();
         case GameConst::JUMP_STATE:
             return new JumpState();
-        default:return NULL;
+        default:
+            return NULL;
     }
 }
+
 void RunState::enter(GameObj *pGameObj) {
-    mGameObj= pGameObj;
+    mGameObj = pGameObj;
     mGameObj->playAnimation(GameConst::RUN_STATE);
 }
-void RunState::update(float dt){
+
+void RunState::update(float dt) {
 
 }

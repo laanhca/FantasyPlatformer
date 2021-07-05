@@ -4,9 +4,11 @@
 #define PROJ_ANDROID_KNIGHTMONSTER_H
 
 #include "Monster.h"
-class KnightMonster : public Monster{
+
+class KnightMonster : public Monster {
 public:
-    virtual bool init()override ;
+    virtual bool init() override;
+
     CREATE_FUNC(KnightMonster);
 
 };

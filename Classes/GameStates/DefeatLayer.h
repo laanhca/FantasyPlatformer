@@ -6,20 +6,24 @@
 #include <cocos/editor-support/cocostudio/SimpleAudioEngine.h>
 #include "cocos2d.h"
 #include "ui/UIButton.h"
+
 USING_NS_CC;
 
-class DefeatLayer: public Layer{
+class DefeatLayer : public Layer {
 public:
     DefeatLayer(int score);
+
     ~DefeatLayer();
-//    static DefeatLayer * createLayer();
-//    CREATE_FUNC(DefeatLayer);
-    bool init()override ;
-    ui::Button * mHomeBtn;
-    LayerColor * mColor;
+
+    bool init() override;
+
+    void homeBtnPress(Ref *ref);
+
+private:
+    ui::Button *mHomeBtn;
+    LayerColor *mColor;
     int mScore;
     CocosDenshion::SimpleAudioEngine *mAudio;
-    void homeBtnPress(Ref *ref);
 
 };
 

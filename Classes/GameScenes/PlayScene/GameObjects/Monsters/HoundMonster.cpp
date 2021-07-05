@@ -21,7 +21,6 @@ bool HoundMonster::init() {
     mAnimator->addAnimation(aniNames[EID::ATTACK],5);
     mAnimator->addAnimation(aniNames[EID::HURT],3,0.3f);
     mAnimator->addAnimation(aniNames[EID::DEATH],3,0.3f);
-//    mAnimator->playAnimation(mSprite,aniNames[EID::RUN]);
     mObjState= new RunState();
     mObjState->enter(this);
 

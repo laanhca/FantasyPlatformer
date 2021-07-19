@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>dino_attack1.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{-3,2.5}</string>
+                <key>spriteSize</key>
+                <string>{114,53}</string>
+                <key>spriteSourceSize</key>
+                <string>{128,128}</string>
+                <key>textureRect</key>
+                <string>{{156,95},{114,53}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>1 4 5 2 3 4 1 2 4 0 1 5</string>
+                <key>vertices</key>
+                <string>118 64 72 88 22 88 4 70 25 47 89 35</string>
+                <key>verticesUV</key>
+                <string>270 124 224 148 174 148 156 130 177 107 241 95</string>
+            </dict>
+            <key>dino_attack2.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{3.5,3}</string>
+                <key>spriteSize</key>
+                <string>{117,54}</string>
+                <key>spriteSourceSize</key>
+                <string>{128,128}</string>
+                <key>textureRect</key>
+                <string>{{164,39},{117,54}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>1 3 4 1 2 3 0 1 4</string>
+                <key>vertices</key>
+                <string>126 56 94 88 9 88 9 59 80 34</string>
+                <key>verticesUV</key>
+                <string>281 61 249 93 164 93 164 64 235 39</string>
+            </dict>
+            <key>dino_attack3.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{2,-1.5}</string>
+                <key>spriteSize</key>
+                <string>{120,55}</string>
+                <key>spriteSourceSize</key>
+                <string>{128,128}</string>
+                <key>textureRect</key>
+                <string>{{369,1},{120,55}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>3 4 5 2 3 5 1 2 5 0 1 5</string>
+                <key>vertices</key>
+                <string>126 39 126 52 111 84 38 93 6 72 56 38</string>
+                <key>verticesUV</key>
+                <string>489 2 489 15 474 47 401 56 369 35 419 1</string>
+            </dict>
+            <key>dino_attack4.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{2.5,-3.5}</string>
+                <key>spriteSize</key>
+                <string>{123,57}</string>
+                <key>spriteSourceSize</key>
+                <string>{128,128}</string>
+                <key>textureRect</key>
+                <string>{{1,1},{123,57}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>2 3 4 1 2 4 0 1 4</string>
+                <key>vertices</key>
+                <string>128 41 128 75 42 96 5 72 51 39</string>
+                <key>verticesUV</key>
+                <string>124 3 124 37 38 58 1 34 47 1</string>
+            </dict>
+            <key>dino_attack5.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,-4.5}</string>
+                <key>spriteSize</key>
+                <string>{118,57}</string>
+                <key>spriteSourceSize</key>
+                <string>{128,128}</string>
+                <key>textureRect</key>
+                <string>{{244,1},{118,57}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>2 4 5 2 3 4 1 2 5 0 1 5</string>
+                <key>vertices</key>
+                <string>123 64 112 76 41 97 5 70 35 40 97 40</string>
+                <key>verticesUV</key>
+                <string>362 25 351 37 280 58 244 31 274 1 336 1</string>
+            </dict>
+            <key>dino_death1.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{-10.5,1.5}</string>
+                <key>spriteSize</key>
+                <string>{107,51}</string>
+                <key>spriteSourceSize</key>
+                <string>{128,128}</string>
+                <key>textureRect</key>
+                <string>{{658,59},{107,51}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>2 4 5 2 3 4 0 1 2 0 2 5</string>
+                <key>vertices</key>
+                <string>100 38 107 75 69 88 0 88 0 70 44 37</string>
+                <key>verticesUV</key>
+                <string>758 60 765 97 727 110 658 110 658 92 702 59</string>
+            </dict>
+            <key>dino_death2.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{-5.5,3.5}</string>
+                <key>spriteSize</key>
+                <string>{117,55}</string>
+                <key>spriteSourceSize</key>
+                <string>{128,128}</string>
+                <key>textureRect</key>
+                <string>{{2,113},{117,55}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>1 2 5 3 4 5 2 3 5 1 5 6 0 1 6</string>
+                <key>vertices</key>
+                <string>117 51 97 59 96 88 0 88 0 73 34 39 96 33</string>
+                <key>verticesUV</key>
+                <string>119 131 99 139 98 168 2 168 2 153 36 119 98 113</string>
+            </dict>
+            <key>dino_death3.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{-13.5,0.5}</string>
+                <key>spriteSize</key>
+                <string>{101,61}</string>
+                <key>spriteSourceSize</key>
+                <string>{128,128}</string>
+                <key>textureRect</key>
+                <string>{{469,98},{101,61}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>1 3 4 1 2 3 0 1 4 6 7 8 5 6 8</string>
+                <key>vertices</key>
+                <string>79 40 101 85 0 94 0 73 37 33 92 38 89 38 89 35 92 35</string>
+                <key>verticesUV</key>
+                <string>548 105 570 150 469 159 469 138 506 98 561 103 558 103 558 100 561 100</string>
+            </dict>
+            <key>dino_death4.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{1,2.5}</string>
+                <key>spriteSize</key>
+                <string>{112,55}</string>
+                <key>spriteSourceSize</key>
+                <string>{128,128}</string>
+                <key>textureRect</key>
+                <string>{{247,58},{112,55}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>1 3 4 1 2 3 0 1 4</string>
+                <key>vertices</key>
+                <string>121 89 23 88 9 74 48 35 89 34</string>
+                <key>verticesUV</key>
+                <string>359 113 261 112 247 98 286 59 327 58</string>
+            </dict>
+            <key>dino_death5.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{1,0}</string>
+                <key>spriteSize</key>
+                <string>{110,48}</string>
+                <key>spriteSourceSize</key>
+                <string>{128,128}</string>
+                <key>textureRect</key>
+                <string>{{645,8},{110,48}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>2 3 4 1 2 4 0 1 4</string>
+                <key>vertices</key>
+                <string>99 46 120 88 11 88 10 75 58 40</string>
+                <key>verticesUV</key>
+                <string>734 14 755 56 646 56 645 43 693 8</string>
+            </dict>
+            <key>dino_death6.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0.5,1}</string>
+                <key>spriteSize</key>
+                <string>{113,52}</string>
+                <key>spriteSourceSize</key>
+                <string>{128,128}</string>
+                <key>textureRect</key>
+                <string>{{353,58},{113,52}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>2 3 4 1 2 4 0 1 4</string>
+                <key>vertices</key>
+                <string>98 43 121 89 20 89 8 77 59 37</string>
+                <key>verticesUV</key>
+                <string>443 64 466 110 365 110 353 98 404 58</string>
+            </dict>
+            <key>dino_hurt1.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{-10.5,1.5}</string>
+                <key>spriteSize</key>
+                <string>{107,51}</string>
+                <key>spriteSourceSize</key>
+                <string>{128,128}</string>
+                <key>textureRect</key>
+                <string>{{658,59},{107,51}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>2 4 5 2 3 4 0 1 2 0 2 5</string>
+                <key>vertices</key>
+                <string>100 38 107 75 69 88 0 88 0 70 44 37</string>
+                <key>verticesUV</key>
+                <string>758 60 765 97 727 110 658 110 658 92 702 59</string>
+            </dict>
+            <key>dino_hurt2.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{-5.5,3.5}</string>
+                <key>spriteSize</key>
+                <string>{117,55}</string>
+                <key>spriteSourceSize</key>
+                <string>{128,128}</string>
+                <key>textureRect</key>
+                <string>{{2,113},{117,55}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>1 2 5 3 4 5 2 3 5 1 5 6 0 1 6</string>
+                <key>vertices</key>
+                <string>117 51 97 59 96 88 0 88 0 73 34 39 96 33</string>
+                <key>verticesUV</key>
+                <string>119 131 99 139 98 168 2 168 2 153 36 119 98 113</string>
+            </dict>
+            <key>dino_hurt3.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{-13.5,0.5}</string>
+                <key>spriteSize</key>
+                <string>{101,61}</string>
+                <key>spriteSourceSize</key>
+                <string>{128,128}</string>
+                <key>textureRect</key>
+                <string>{{469,98},{101,61}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>1 3 4 1 2 3 0 1 4 6 7 8 5 6 8</string>
+                <key>vertices</key>
+                <string>79 40 101 85 0 94 0 73 37 33 92 38 89 38 89 35 92 35</string>
+                <key>verticesUV</key>
+                <string>548 105 570 150 469 159 469 138 506 98 561 103 558 103 558 100 561 100</string>
+            </dict>
+            <key>dino_hurt4.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{-6.5,4.5}</string>
+                <key>spriteSize</key>
+                <string>{115,57}</string>
+                <key>spriteSourceSize</key>
+                <string>{128,128}</string>
+                <key>textureRect</key>
+                <string>{{1,55},{115,57}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>1 3 4 1 2 3 0 1 4</string>
+                <key>vertices</key>
+                <string>115 59 86 88 0 88 0 62 59 31</string>
+                <key>verticesUV</key>
+                <string>116 83 87 112 1 112 1 86 60 55</string>
+            </dict>
+            <key>dino_hurt5.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{-9,1}</string>
+                <key>spriteSize</key>
+                <string>{110,50}</string>
+                <key>spriteSourceSize</key>
+                <string>{128,128}</string>
+                <key>textureRect</key>
+                <string>{{573,109},{110,50}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>2 4 5 2 3 4 0 1 2 0 2 5</string>
+                <key>vertices</key>
+                <string>84 41 110 64 86 88 0 88 0 73 31 38</string>
+                <key>verticesUV</key>
+                <string>657 112 683 135 659 159 573 159 573 144 604 109</string>
+            </dict>
+            <key>dino_idle1.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{-9,1}</string>
+                <key>spriteSize</key>
+                <string>{110,52}</string>
+                <key>spriteSourceSize</key>
+                <string>{128,128}</string>
+                <key>textureRect</key>
+                <string>{{453,43},{110,52}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>3 4 5 2 3 5 0 1 2 0 2 5</string>
+                <key>vertices</key>
+                <string>84 39 110 62 84 88 8 89 0 68 36 37</string>
+                <key>verticesUV</key>
+                <string>537 45 563 68 537 94 461 95 453 74 489 43</string>
+            </dict>
+            <key>dino_idle2.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{-8,2.5}</string>
+                <key>spriteSize</key>
+                <string>{108,53}</string>
+                <key>spriteSourceSize</key>
+                <string>{128,128}</string>
+                <key>textureRect</key>
+                <string>{{560,54},{108,53}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>3 4 5 2 3 5 0 1 2 0 2 5</string>
+                <key>vertices</key>
+                <string>84 37 110 60 82 88 7 88 2 62 39 35</string>
+                <key>verticesUV</key>
+                <string>642 56 668 79 640 107 565 107 560 81 597 54</string>
+            </dict>
+            <key>dino_idle3.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{-9,1}</string>
+                <key>spriteSize</key>
+                <string>{110,52}</string>
+                <key>spriteSourceSize</key>
+                <string>{128,128}</string>
+                <key>textureRect</key>
+                <string>{{453,43},{110,52}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>3 4 5 2 3 5 0 1 2 0 2 5</string>
+                <key>vertices</key>
+                <string>84 39 110 62 84 88 8 89 0 68 36 37</string>
+                <key>verticesUV</key>
+                <string>537 45 563 68 537 94 461 95 453 74 489 43</string>
+            </dict>
+            <key>dino_walk1.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{-9,1.5}</string>
+                <key>spriteSize</key>
+                <string>{110,51}</string>
+                <key>spriteSourceSize</key>
+                <string>{128,128}</string>
+                <key>textureRect</key>
+                <string>{{548,1},{110,51}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>2 4 5 2 3 4 0 1 2 0 2 5</string>
+                <key>vertices</key>
+                <string>84 40 110 63 85 88 0 88 0 72 31 37</string>
+                <key>verticesUV</key>
+                <string>632 4 658 27 633 52 548 52 548 36 579 1</string>
+            </dict>
+            <key>dino_walk2.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{-9,0.5}</string>
+                <key>spriteSize</key>
+                <string>{110,55}</string>
+                <key>spriteSourceSize</key>
+                <string>{128,128}</string>
+                <key>textureRect</key>
+                <string>{{251,115},{110,55}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>3 5 6 3 4 5 2 3 6 0 1 2 0 2 6</string>
+                <key>vertices</key>
+                <string>84 39 110 62 81 91 6 83 0 75 0 71 31 36</string>
+                <key>verticesUV</key>
+                <string>335 118 361 141 332 170 257 162 251 154 251 150 282 115</string>
+            </dict>
+            <key>dino_walk3.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{-9.5,3}</string>
+                <key>spriteSize</key>
+                <string>{109,54}</string>
+                <key>spriteSourceSize</key>
+                <string>{128,128}</string>
+                <key>textureRect</key>
+                <string>{{358,112},{109,54}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>2 4 5 2 3 4 0 1 2 0 2 5</string>
+                <key>vertices</key>
+                <string>83 37 109 60 81 88 0 88 0 70 34 34</string>
+                <key>verticesUV</key>
+                <string>441 115 467 138 439 166 358 166 358 148 392 112</string>
+            </dict>
+            <key>dino_walk4.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{-5,-2}</string>
+                <key>spriteSize</key>
+                <string>{118,58}</string>
+                <key>spriteSourceSize</key>
+                <string>{128,128}</string>
+                <key>textureRect</key>
+                <string>{{126,1},{118,58}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>2 4 5 2 3 4 0 1 2 0 2 5</string>
+                <key>vertices</key>
+                <string>84 40 118 70 36 95 0 76 0 72 31 37</string>
+                <key>verticesUV</key>
+                <string>210 4 244 34 162 59 126 40 126 36 157 1</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>3</integer>
+            <key>pixelFormat</key>
+            <string>RGBA8888</string>
+            <key>premultiplyAlpha</key>
+            <false/>
+            <key>realTextureFileName</key>
+            <string>dinomonster.png</string>
+            <key>size</key>
+            <string>{766,171}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:17c7107ba7a654966f6eadd631ae0f5e:a5060e7b0bcc67b408f6499f3575c713:0e0050d1bd7f0733d28312dbd3c83470$</string>
+            <key>textureFileName</key>
+            <string>dinomonster.png</string>
+        </dict>
+    </dict>
+</plist>

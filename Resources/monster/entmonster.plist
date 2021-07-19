@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>ent_attack1.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{-22.5,-1.5}</string>
+                <key>spriteSize</key>
+                <string>{131,111}</string>
+                <key>spriteSourceSize</key>
+                <string>{256,256}</string>
+                <key>textureRect</key>
+                <string>{{404,1},{131,111}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>0 4 5 2 3 4 0 1 2 0 2 4</string>
+                <key>vertices</key>
+                <string>171 142 146 185 92 182 40 98 94 74 143 74</string>
+                <key>verticesUV</key>
+                <string>535 69 510 112 456 109 404 25 458 1 507 1</string>
+            </dict>
+            <key>ent_attack2.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{-15.5,4}</string>
+                <key>spriteSize</key>
+                <string>{137,118}</string>
+                <key>spriteSourceSize</key>
+                <string>{256,256}</string>
+                <key>textureRect</key>
+                <string>{{55,84},{137,118}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>2 6 7 5 6 2 2 3 4 5 2 4 0 1 2 0 2 7</string>
+                <key>vertices</key>
+                <string>181 111 181 142 142 143 140 182 94 183 44 128 65 82 124 65</string>
+                <key>verticesUV</key>
+                <string>192 130 192 161 153 162 151 201 105 202 55 147 76 101 135 84</string>
+            </dict>
+            <key>ent_attack3.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{34.5,1}</string>
+                <key>spriteSize</key>
+                <string>{179,112}</string>
+                <key>spriteSourceSize</key>
+                <string>{256,256}</string>
+                <key>textureRect</key>
+                <string>{{1,1},{179,112}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>3 7 8 5 3 4 5 6 3 3 6 7 3 0 1 3 1 2 0 3 8</string>
+                <key>vertices</key>
+                <string>164 89 252 147 252 152 142 152 140 182 94 183 73 158 73 91 119 71</string>
+                <key>verticesUV</key>
+                <string>92 19 180 77 180 82 70 82 68 112 22 113 1 88 1 21 47 1</string>
+            </dict>
+            <key>ent_attack4.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{20.5,-2}</string>
+                <key>spriteSize</key>
+                <string>{141,104}</string>
+                <key>spriteSourceSize</key>
+                <string>{256,256}</string>
+                <key>textureRect</key>
+                <string>{{1,174},{141,104}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>3 4 5 0 3 5 0 1 2 0 2 3</string>
+                <key>vertices</key>
+                <string>188 115 219 182 93 182 78 153 96 84 151 78</string>
+                <key>verticesUV</key>
+                <string>111 211 142 278 16 278 1 249 19 180 74 174</string>
+            </dict>
+            <key>ent_attack5.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{-0.5,1}</string>
+                <key>spriteSize</key>
+                <string>{111,112}</string>
+                <key>spriteSourceSize</key>
+                <string>{256,256}</string>
+                <key>textureRect</key>
+                <string>{{486,216},{111,112}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>2 7 8 2 6 7 2 3 4 2 4 5 2 5 6 0 1 2 0 2 8</string>
+                <key>vertices</key>
+                <string>171 88 183 123 149 144 183 164 183 182 93 183 74 159 72 95 115 71</string>
+                <key>verticesUV</key>
+                <string>585 233 597 268 563 289 597 309 597 327 507 328 488 304 486 240 529 216</string>
+            </dict>
+            <key>ent_death1.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{5.5,0.5}</string>
+                <key>spriteSize</key>
+                <string>{109,117}</string>
+                <key>spriteSourceSize</key>
+                <string>{256,256}</string>
+                <key>textureRect</key>
+                <string>{{194,116},{109,117}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>4 5 6 1 2 4 2 3 4 1 4 6 0 1 6</string>
+                <key>vertices</key>
+                <string>188 91 188 136 157 186 90 178 79 125 79 81 118 69</string>
+                <key>verticesUV</key>
+                <string>303 138 303 183 272 233 205 225 194 172 194 128 233 116</string>
+            </dict>
+            <key>ent_death2.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{11,2.5}</string>
+                <key>spriteSize</key>
+                <string>{144,115}</string>
+                <key>spriteSourceSize</key>
+                <string>{256,256}</string>
+                <key>textureRect</key>
+                <string>{{166,1},{144,115}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>5 7 8 5 6 7 3 4 5 2 3 5 0 1 2 0 2 5 0 5 8</string>
+                <key>vertices</key>
+                <string>170 76 211 125 171 169 127 183 88 180 102 133 67 132 80 80 110 68</string>
+                <key>verticesUV</key>
+                <string>269 9 310 58 270 102 226 116 187 113 201 66 166 65 179 13 209 1</string>
+            </dict>
+            <key>ent_death3.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{14,-1.5}</string>
+                <key>spriteSize</key>
+                <string>{112,113}</string>
+                <key>spriteSourceSize</key>
+                <string>{256,256}</string>
+                <key>textureRect</key>
+                <string>{{292,197},{112,113}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>2 3 4 1 2 4 0 1 4</string>
+                <key>vertices</key>
+                <string>198 106 158 186 90 178 86 82 136 73</string>
+                <key>verticesUV</key>
+                <string>404 230 364 310 296 302 292 206 342 197</string>
+            </dict>
+            <key>ent_death4.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{18.5,-1.5}</string>
+                <key>spriteSize</key>
+                <string>{141,101}</string>
+                <key>spriteSourceSize</key>
+                <string>{256,256}</string>
+                <key>textureRect</key>
+                <string>{{284,1},{141,101}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>4 5 6 2 3 4 0 2 4 0 1 2 0 4 6</string>
+                <key>vertices</key>
+                <string>185 89 217 145 175 180 76 180 106 145 99 85 141 79</string>
+                <key>verticesUV</key>
+                <string>393 11 425 67 383 102 284 102 314 67 307 7 349 1</string>
+            </dict>
+            <key>ent_death5.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{26,3.5}</string>
+                <key>spriteSize</key>
+                <string>{126,115}</string>
+                <key>spriteSourceSize</key>
+                <string>{256,256}</string>
+                <key>textureRect</key>
+                <string>{{531,1},{126,115}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>6 8 9 6 7 8 5 6 9 3 4 5 2 3 5 5 0 1 5 1 2 0 5 9 11 12 13 10 11 13</string>
+                <key>vertices</key>
+                <string>184 89 217 149 217 178 107 182 91 146 145 134 116 108 105 114 94 77 146 67 113 125 109 125 109 122 113 122</string>
+                <key>verticesUV</key>
+                <string>624 23 657 83 657 112 547 116 531 80 585 68 556 42 545 48 534 11 586 1 553 59 549 59 549 56 553 56</string>
+            </dict>
+            <key>ent_death6.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{32,-11.5}</string>
+                <key>spriteSize</key>
+                <string>{128,97}</string>
+                <key>spriteSourceSize</key>
+                <string>{256,256}</string>
+                <key>textureRect</key>
+                <string>{{301,104},{128,97}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>4 5 6 2 3 4 1 2 4 0 1 4 0 4 6</string>
+                <key>vertices</key>
+                <string>214 116 224 166 207 188 96 178 156 140 110 92 176 91</string>
+                <key>verticesUV</key>
+                <string>419 129 429 179 412 201 301 191 361 153 315 105 381 104</string>
+            </dict>
+            <key>ent_death7.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{28.5,-28}</string>
+                <key>spriteSize</key>
+                <string>{121,72}</string>
+                <key>spriteSourceSize</key>
+                <string>{256,256}</string>
+                <key>textureRect</key>
+                <string>{{791,37},{121,72}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>1 3 4 1 2 3 0 1 4 0 4 5</string>
+                <key>vertices</key>
+                <string>217 128 217 192 96 178 138 149 169 144 181 120</string>
+                <key>verticesUV</key>
+                <string>912 45 912 109 791 95 833 66 864 61 876 37</string>
+            </dict>
+            <key>ent_hurt1.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{5.5,0.5}</string>
+                <key>spriteSize</key>
+                <string>{109,117}</string>
+                <key>spriteSourceSize</key>
+                <string>{256,256}</string>
+                <key>textureRect</key>
+                <string>{{194,116},{109,117}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>4 5 6 1 2 4 2 3 4 1 4 6 0 1 6</string>
+                <key>vertices</key>
+                <string>188 91 188 136 157 186 90 178 79 125 79 81 118 69</string>
+                <key>verticesUV</key>
+                <string>303 138 303 183 272 233 205 225 194 172 194 128 233 116</string>
+            </dict>
+            <key>ent_hurt2.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{11,2.5}</string>
+                <key>spriteSize</key>
+                <string>{144,115}</string>
+                <key>spriteSourceSize</key>
+                <string>{256,256}</string>
+                <key>textureRect</key>
+                <string>{{166,1},{144,115}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>5 7 8 5 6 7 3 4 5 2 3 5 0 1 2 0 2 5 0 5 8</string>
+                <key>vertices</key>
+                <string>170 76 211 125 171 169 127 183 88 180 102 133 67 132 80 80 110 68</string>
+                <key>verticesUV</key>
+                <string>269 9 310 58 270 102 226 116 187 113 201 66 166 65 179 13 209 1</string>
+            </dict>
+            <key>ent_hurt3.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{14,-1.5}</string>
+                <key>spriteSize</key>
+                <string>{112,113}</string>
+                <key>spriteSourceSize</key>
+                <string>{256,256}</string>
+                <key>textureRect</key>
+                <string>{{292,197},{112,113}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>2 3 4 1 2 4 0 1 4</string>
+                <key>vertices</key>
+                <string>198 106 158 186 90 178 86 82 136 73</string>
+                <key>verticesUV</key>
+                <string>404 230 364 310 296 302 292 206 342 197</string>
+            </dict>
+            <key>ent_idle1.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{-13,3}</string>
+                <key>spriteSize</key>
+                <string>{104,114}</string>
+                <key>spriteSourceSize</key>
+                <string>{256,256}</string>
+                <key>textureRect</key>
+                <string>{{708,192},{104,114}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>2 4 5 2 3 4 0 1 2 0 2 5</string>
+                <key>vertices</key>
+                <string>167 90 167 164 139 181 68 182 63 96 112 68</string>
+                <key>verticesUV</key>
+                <string>812 214 812 288 784 305 713 306 708 220 757 192</string>
+            </dict>
+            <key>ent_idle2.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{-9,0}</string>
+                <key>spriteSize</key>
+                <string>{112,112}</string>
+                <key>spriteSourceSize</key>
+                <string>{256,256}</string>
+                <key>textureRect</key>
+                <string>{{535,117},{112,112}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>2 6 7 5 6 2 2 3 4 5 2 4 0 1 2 0 2 7</string>
+                <key>vertices</key>
+                <string>168 93 175 167 144 160 144 184 87 178 63 157 65 95 116 72</string>
+                <key>verticesUV</key>
+                <string>640 138 647 212 616 205 616 229 559 223 535 202 537 140 588 117</string>
+            </dict>
+            <key>ent_idle3.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{-11.5,-1}</string>
+                <key>spriteSize</key>
+                <string>{109,106}</string>
+                <key>spriteSourceSize</key>
+                <string>{256,256}</string>
+                <key>textureRect</key>
+                <string>{{704,1},{109,106}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>5 7 8 5 6 7 2 3 4 2 4 5 2 5 8 0 1 2 0 2 8</string>
+                <key>vertices</key>
+                <string>171 93 171 152 133 155 150 181 79 182 95 153 63 153 62 102 105 76</string>
+                <key>verticesUV</key>
+                <string>813 18 813 77 775 80 792 106 721 107 737 78 705 78 704 27 747 1</string>
+            </dict>
+            <key>ent_idle4.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{-9,0}</string>
+                <key>spriteSize</key>
+                <string>{112,112}</string>
+                <key>spriteSourceSize</key>
+                <string>{256,256}</string>
+                <key>textureRect</key>
+                <string>{{535,117},{112,112}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>2 6 7 5 6 2 2 3 4 5 2 4 0 1 2 0 2 7</string>
+                <key>vertices</key>
+                <string>168 93 175 167 144 160 144 184 87 178 63 157 65 95 116 72</string>
+                <key>verticesUV</key>
+                <string>640 138 647 212 616 205 616 229 559 223 535 202 537 140 588 117</string>
+            </dict>
+            <key>ent_walk1.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{-8.5,-0.5}</string>
+                <key>spriteSize</key>
+                <string>{113,111}</string>
+                <key>spriteSourceSize</key>
+                <string>{256,256}</string>
+                <key>textureRect</key>
+                <string>{{424,114},{113,111}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>2 3 4 1 2 4 0 1 4</string>
+                <key>vertices</key>
+                <string>176 90 146 184 85 178 63 100 103 73</string>
+                <key>verticesUV</key>
+                <string>537 131 507 225 446 219 424 141 464 114</string>
+            </dict>
+            <key>ent_walk2.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{-12,0.5}</string>
+                <key>spriteSize</key>
+                <string>{106,105}</string>
+                <key>spriteSourceSize</key>
+                <string>{256,256}</string>
+                <key>textureRect</key>
+                <string>{{773,105},{106,105}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>1 3 4 1 2 3 1 4 5 0 1 5</string>
+                <key>vertices</key>
+                <string>153 76 169 105 152 180 99 180 63 103 87 75</string>
+                <key>verticesUV</key>
+                <string>863 106 879 135 862 210 809 210 773 133 797 105</string>
+            </dict>
+            <key>ent_walk3.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{-11.5,2.5}</string>
+                <key>spriteSize</key>
+                <string>{111,111}</string>
+                <key>spriteSourceSize</key>
+                <string>{256,256}</string>
+                <key>textureRect</key>
+                <string>{{135,221},{111,111}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>2 3 4 1 2 4 0 1 4</string>
+                <key>vertices</key>
+                <string>172 86 156 174 88 181 61 96 102 70</string>
+                <key>verticesUV</key>
+                <string>246 237 230 325 162 332 135 247 176 221</string>
+            </dict>
+            <key>ent_walk4.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{-12,3}</string>
+                <key>spriteSize</key>
+                <string>{102,108}</string>
+                <key>spriteSourceSize</key>
+                <string>{256,256}</string>
+                <key>textureRect</key>
+                <string>{{814,212},{102,108}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>1 3 4 1 2 3 0 1 4</string>
+                <key>vertices</key>
+                <string>167 92 167 177 65 179 65 97 114 71</string>
+                <key>verticesUV</key>
+                <string>916 233 916 318 814 320 814 238 863 212</string>
+            </dict>
+            <key>ent_walk5.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{-11,1}</string>
+                <key>spriteSize</key>
+                <string>{110,110}</string>
+                <key>spriteSourceSize</key>
+                <string>{256,256}</string>
+                <key>textureRect</key>
+                <string>{{639,100},{110,110}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>2 3 4 1 2 4 0 1 4</string>
+                <key>vertices</key>
+                <string>172 88 156 175 88 182 62 99 102 72</string>
+                <key>verticesUV</key>
+                <string>749 116 733 203 665 210 639 127 679 100</string>
+            </dict>
+            <key>ent_walk6.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{-9,3}</string>
+                <key>spriteSize</key>
+                <string>{112,108}</string>
+                <key>spriteSourceSize</key>
+                <string>{256,256}</string>
+                <key>textureRect</key>
+                <string>{{594,221},{112,108}}</string>
+                <key>textureRotated</key>
+                <false/>
+                <key>triangles</key>
+                <string>2 3 4 1 2 4 0 1 4</string>
+                <key>vertices</key>
+                <string>175 87 151 173 86 179 63 98 102 71</string>
+                <key>verticesUV</key>
+                <string>706 237 682 323 617 329 594 248 633 221</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>3</integer>
+            <key>pixelFormat</key>
+            <string>RGBA8888</string>
+            <key>premultiplyAlpha</key>
+            <false/>
+            <key>realTextureFileName</key>
+            <string>entmonster.png</string>
+            <key>size</key>
+            <string>{917,333}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:66d4092105abb78fee22abd76d9a58fe:5eca6296a2b06d97fb4b41c058a9222a:c36a54c25e4f6df6fe79b0a20b6397d0$</string>
+            <key>textureFileName</key>
+            <string>entmonster.png</string>
+        </dict>
+    </dict>
+</plist>
